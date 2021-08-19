@@ -1,0 +1,68 @@
+!
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<html lang="en">
+<h1 id="title">Survey</h1>
+<div id="box">
+    <p id="description">Please enter following information:</p>
+    <form id="survey-form" action="test.php" method="get">
+        <label id="name-label" class="label">Name*<label>
+      <br>
+      <input id="name" type="text" class="input" placeholder= "John Doe" required>
+      <br>
+      <br>
+    <label id="email-label" class="label">Email*</label>
+        <br>
+        <input id="email" type="email" class="input" placeholder="Johndoe@hotmail.com" required>
+        <br>
+        <br>
+        <label id="number-label" class="label">Number</label>
+        <br>
+        <input id="number" type="number" class="input" title="numeric" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" min="0" max="9" placeholder="(555)-555-5555">
+        <br>
+        <br>
+        <label for="dropdown" class="label">Select Gender </label>
+        <select id="dropdown">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+      </select>
+        <br>
+        <br>
+        <label for="citizen" class="label">Citizen?<label>
+        <br>
+        <input type="checkbox" name="check" id="yes" value="yes"><label for="yes" class="radio-input">Yes</label>
+        <input type="checkbox" name="check" id="no" value="no"><label for="no" class="radio-input">No</label>
+        <br>
+        <br>
+        <label for="language-group" class="label">Primary Language</label>
+        <br>
+        <input type="radio" value="english" name="language-group" id="english-radio"><label for="english-radio" class="radio-input">English</label></input>
+
+        <input type="radio" value="spanish" name="language-group" id="spanish-radio"><label for="spanish-radio" class="radio-input">Spaish</label></input>
+
+        <input type="radio" value="german" name="language-group" id="german-radio"><label for="german-radio" class="radio-input">German</label></input>
+
+        <input type="radio" value="french" name="language-group" id="french-radio"><label for="french-radio" class="radio-input">French</label></input>
+
+        <input type="radio" value="other" name="language-group" id="other-radio" class="radio-input"><label for="other-radio" class="radio-input">Other</label></input>
+        <br>
+        <br>
+        <label for="textarea">Any other comments?</label>
+        <br>
+        <br>
+        <textarea id="textarea" class="textarea" placeholder="Type any comments here!"></textarea>
+
+        <br>
+        <button type="submit" id="submit" form="survey-form" value="submit" class="submit">Submit</button>
+    </form>
+
+
+
+</div>
+
+</html>
